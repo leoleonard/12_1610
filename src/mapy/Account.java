@@ -23,5 +23,14 @@ public class Account {
             System.out.println(value);
         }
 
+
+        Set<Map.Entry<Long, Customer>> entries = customers.entrySet();
+
+        for (Map.Entry<Long, Customer> entry : entries) {
+            Long key = entry.getKey();
+            Customer value = entry.getValue();
+            System.out.println("Klucz: " + key + " | Wartość: " + value);
+        }
+
     }
 }
