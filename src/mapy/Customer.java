@@ -1,14 +1,24 @@
 package mapy;
 
 public class Customer {
+    private long id;
     private String firstName;
     private String lastName;
     private int phoneNumber;
 
-    public Customer(String firstName, String lastName, int phoneNumber) {
+    public Customer(long id, String firstName, String lastName, int phoneNumber) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -38,6 +48,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
+                id + " " +
                 "firstName= " + firstName + '\'' +
                 ", lastName= " + lastName + '\'' +
                 ", phoneNumber=" + phoneNumber +
