@@ -13,16 +13,18 @@ public class Names {
         names.add("Roman");
         names.add("Aneta");
 
-        Iterator <String> iterator = names.iterator();
-        while(iterator.hasNext()) {
-            String next = iterator.next();
-            System.out.println(next);
-        }
+        showAllNames(names);
 
+//        Iterator <String> iterator = names.iterator();
+//        while(iterator.hasNext()) {
+//            String next = iterator.next();
+//            System.out.println(next);
+//        }
+    }
+
+    private static void showAllNames(Set<String> names) {
         for (String num : names) {
             System.out.println(num);
         }
-
-
     }
 }
