@@ -20,7 +20,7 @@ public class Names {
         }
 
         for (String num : names) {
-            System.out.println(names);
+            System.out.println(num);
         }
 
 
