@@ -13,7 +13,6 @@ public class Account {
         Customer customer2 = new Customer(222L, "Ola", "Mataoła", 23244443);
         Customer customer3 = new Customer(333L, "Mikolaj", "Gruby", 34233232);
 
-
         customers.put(customer1.getId(), customer1);
         customers.put(customer2.getId(), customer2);
         customers.put(customer3.getId(), customer3);
@@ -34,14 +33,14 @@ public class Account {
             System.out.println("Klient nie istnieje w bazie");
         }
 
-        Set<Long> keys = customers.keySet();
+       // Set<Long> keys = customers.keySet();
         //System.out.println(keys);
 
-        Collection<Customer> values = customers.values();
+      //  Collection<Customer> values = customers.values();
         //  for (Customer value : values) {
 //            System.out.println(value);
         //       if (l == value.getId()) {
-      //  System.out.println(value);
+        //  System.out.println(value);
         //      }
 //            else if (l != value.getId()) {
 //                    System.out.println("Klient nie istnieje w bazie");
