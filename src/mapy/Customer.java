@@ -54,4 +54,9 @@ public class Customer {
                 ", phoneNumber=" + phoneNumber +
                 '}';
     }
+
+
+    public long setId() {
+        return this.id = id;
+    }
 }
