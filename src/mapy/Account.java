@@ -12,7 +12,7 @@ public class Account {
         Customer customer3 = new Customer(333L, "Mikolaj", "Gruby", 34233232);
 
         customers.put(customer1.getId(), customer1);
-        customers.put(customer2.getId(), customer3);
+        customers.put(customer2.getId(), customer2);
         customers.put(customer3.getId(), customer3);
 
         Set<Long> keys = customers.keySet();
